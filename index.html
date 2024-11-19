@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form">
+            <form>
+                <div class="sr">
+                    <p>Name</p>
+                    <input type="text" placeholder="Enter your name" required id="full-name">
+                    <p>Password</p>
+                    <input type="password" placeholder="Enter your Password" required id="Password">
+                    <p>Email</p>
+                    <input type="text" placeholder="Enter your Phone Email" id="email">
+                    <p>Adress</p>
+                    <input type="text" placeholder="Enter your Phone Adress" id="Address">
+                    <p>State</p>
+                    <input type="text" placeholder="Enter your Phone Adress" id="State">
+                    
+                    <div class="sr-bt">
+                        <button type="button" onclick="submit_form()">SUBMIT</button>
+                    </div>
+                    <div class="more-buttons">
+                        <div class="remove-first">
+                            <button type="button" id="first-remove" onclick="remove_first()">Remove First Values</button>
+                        </div>
+                        <div class="remove-any">
+                            <input type="text" onclick="remove_any()" id="num" placeholder="enter index number"> <br>
+                        </div>
+                        <div class="remove-end">
+                            <button type="button" id="end-remove" onclick="remove_end()">Remove end Values</button>
+                        </div>
+                    </div>
+                 </div>
+            </form>
+        </div>
+        <div id="userdata">
+        </div> 
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
